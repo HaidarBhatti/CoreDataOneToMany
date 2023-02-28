@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCAD17BD29ADD66300876430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17BC29ADD66300876430 /* AppDelegate.swift */; };
+		DCAD17BF29ADD66300876430 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17BE29ADD66300876430 /* SceneDelegate.swift */; };
+		DCAD17C129ADD66300876430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17C029ADD66300876430 /* ViewController.swift */; };
+		DCAD17C429ADD66300876430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD17C229ADD66300876430 /* Main.storyboard */; };
+		DCAD17C729ADD66300876430 /* CoreDataOneToMany.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17C529ADD66300876430 /* CoreDataOneToMany.xcdatamodeld */; };
+		DCAD17C929ADD66500876430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD17C829ADD66500876430 /* Assets.xcassets */; };
+		DCAD17CC29ADD66500876430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAD17CA29ADD66500876430 /* LaunchScreen.storyboard */; };
+		DCAD17D929ADD80200876430 /* CDPerson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17D529ADD80200876430 /* CDPerson+CoreDataClass.swift */; };
+		DCAD17DA29ADD80200876430 /* CDPerson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17D629ADD80200876430 /* CDPerson+CoreDataProperties.swift */; };
+		DCAD17DB29ADD80200876430 /* CDVehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17D729ADD80200876430 /* CDVehicle+CoreDataClass.swift */; };
+		DCAD17DC29ADD80200876430 /* CDVehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17D829ADD80200876430 /* CDVehicle+CoreDataProperties.swift */; };
+		DCAD17DE29ADD88900876430 /* PersistanceStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17DD29ADD88900876430 /* PersistanceStorage.swift */; };
+		DCAD17E129ADDA2600876430 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17E029ADDA2600876430 /* Person.swift */; };
+		DCAD17E329ADDA6400876430 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17E229ADDA6400876430 /* Vehicle.swift */; };
+		DCAD17E529ADDB2D00876430 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17E429ADDB2D00876430 /* BaseRepository.swift */; };
+		DCAD17E729ADDB6000876430 /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17E629ADDB6000876430 /* PersonRepository.swift */; };
+		DCAD17E929ADDC9D00876430 /* VehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17E829ADDC9D00876430 /* VehicleRepository.swift */; };
+		DCAD17EC29ADE4CB00876430 /* CDPerson+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17EB29ADE4CA00876430 /* CDPerson+Extension.swift */; };
+		DCAD17EE29ADE6CA00876430 /* CDVehicle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17ED29ADE6CA00876430 /* CDVehicle+Extension.swift */; };
+		DCAD17F129ADE94F00876430 /* PersonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17F029ADE94F00876430 /* PersonManager.swift */; };
+		DCAD17F329ADEADA00876430 /* VehicleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAD17F229ADEADA00876430 /* VehicleManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCAD17B929ADD66300876430 /* CoreDataOneToMany.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataOneToMany.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAD17BC29ADD66300876430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCAD17BE29ADD66300876430 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DCAD17C029ADD66300876430 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCAD17C329ADD66300876430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCAD17C629ADD66300876430 /* CoreDataOneToMany.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataOneToMany.xcdatamodel; sourceTree = "<group>"; };
+		DCAD17C829ADD66500876430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAD17CB29ADD66500876430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCAD17CD29ADD66500876430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAD17D529ADD80200876430 /* CDPerson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DCAD17D629ADD80200876430 /* CDPerson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DCAD17D729ADD80200876430 /* CDVehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DCAD17D829ADD80200876430 /* CDVehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVehicle+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DCAD17DD29ADD88900876430 /* PersistanceStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceStorage.swift; sourceTree = "<group>"; };
+		DCAD17E029ADDA2600876430 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DCAD17E229ADDA6400876430 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		DCAD17E429ADDB2D00876430 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		DCAD17E629ADDB6000876430 /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		DCAD17E829ADDC9D00876430 /* VehicleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRepository.swift; sourceTree = "<group>"; };
+		DCAD17EB29ADE4CA00876430 /* CDPerson+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPerson+Extension.swift"; sourceTree = "<group>"; };
+		DCAD17ED29ADE6CA00876430 /* CDVehicle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDVehicle+Extension.swift"; sourceTree = "<group>"; };
+		DCAD17F029ADE94F00876430 /* PersonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManager.swift; sourceTree = "<group>"; };
+		DCAD17F229ADEADA00876430 /* VehicleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCAD17B629ADD66300876430 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCAD17B029ADD66300876430 = {
+			isa = PBXGroup;
+			children = (
+				DCAD17BB29ADD66300876430 /* CoreDataOneToMany */,
+				DCAD17BA29ADD66300876430 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCAD17BA29ADD66300876430 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD17B929ADD66300876430 /* CoreDataOneToMany.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCAD17BB29ADD66300876430 /* CoreDataOneToMany */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD17BC29ADD66300876430 /* AppDelegate.swift */,
+				DCAD17BE29ADD66300876430 /* SceneDelegate.swift */,
+				DCAD17EF29ADE93900876430 /* Manager */,
+				DCAD17DF29ADDA1B00876430 /* Models */,
+				DCAD17D429ADD7AB00876430 /* CoreDataHelping */,
+				DCAD17D329ADD7A200876430 /* Controllers */,
+				DCAD17C229ADD66300876430 /* Main.storyboard */,
+				DCAD17C829ADD66500876430 /* Assets.xcassets */,
+				DCAD17CA29ADD66500876430 /* LaunchScreen.storyboard */,
+				DCAD17CD29ADD66500876430 /* Info.plist */,
+				DCAD17C529ADD66300876430 /* CoreDataOneToMany.xcdatamodeld */,
+			);
+			path = CoreDataOneToMany;
+			sourceTree = "<group>";
+		};
+		DCAD17D329ADD7A200876430 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD17C029ADD66300876430 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DCAD17D429ADD7AB00876430 /* CoreDataHelping */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD17DD29ADD88900876430 /* PersistanceStorage.swift */,
+				DCAD17E429ADDB2D00876430 /* BaseRepository.swift */,
+				DCAD17E629ADDB6000876430 /* PersonRepository.swift */,
+				DCAD17E829ADDC9D00876430 /* VehicleRepository.swift */,
+				DCAD17EA29ADE4C000876430 /* Extension */,
+				DCAD17D529ADD80200876430 /* CDPerson+CoreDataClass.swift */,
+				DCAD17D629ADD80200876430 /* CDPerson+CoreDataProperties.swift */,
+				DCAD17D729ADD80200876430 /* CDVehicle+CoreDataClass.swift */,
+				DCAD17D829ADD80200876430 /* CDVehicle+CoreDataProperties.swift */,
+			);
+			path = CoreDataHelping;
+			sourceTree = "<group>";
+		};
+		DCAD17DF29ADDA1B00876430 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD17E029ADDA2600876430 /* Person.swift */,
+				DCAD17E229ADDA6400876430 /* Vehicle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCAD17EA29ADE4C000876430 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD17EB29ADE4CA00876430 /* CDPerson+Extension.swift */,
+				DCAD17ED29ADE6CA00876430 /* CDVehicle+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DCAD17EF29ADE93900876430 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DCAD17F029ADE94F00876430 /* PersonManager.swift */,
+				DCAD17F229ADEADA00876430 /* VehicleManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCAD17B829ADD66300876430 /* CoreDataOneToMany */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAD17D029ADD66500876430 /* Build configuration list for PBXNativeTarget "CoreDataOneToMany" */;
+			buildPhases = (
+				DCAD17B529ADD66300876430 /* Sources */,
+				DCAD17B629ADD66300876430 /* Frameworks */,
+				DCAD17B729ADD66300876430 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataOneToMany;
+			productName = CoreDataOneToMany;
+			productReference = DCAD17B929ADD66300876430 /* CoreDataOneToMany.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCAD17B129ADD66300876430 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					DCAD17B829ADD66300876430 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = DCAD17B429ADD66300876430 /* Build configuration list for PBXProject "CoreDataOneToMany" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCAD17B029ADD66300876430;
+			productRefGroup = DCAD17BA29ADD66300876430 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCAD17B829ADD66300876430 /* CoreDataOneToMany */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCAD17B729ADD66300876430 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD17CC29ADD66500876430 /* LaunchScreen.storyboard in Resources */,
+				DCAD17C929ADD66500876430 /* Assets.xcassets in Resources */,
+				DCAD17C429ADD66300876430 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCAD17B529ADD66300876430 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAD17F129ADE94F00876430 /* PersonManager.swift in Sources */,
+				DCAD17E129ADDA2600876430 /* Person.swift in Sources */,
+				DCAD17F329ADEADA00876430 /* VehicleManager.swift in Sources */,
+				DCAD17C129ADD66300876430 /* ViewController.swift in Sources */,
+				DCAD17BD29ADD66300876430 /* AppDelegate.swift in Sources */,
+				DCAD17EE29ADE6CA00876430 /* CDVehicle+Extension.swift in Sources */,
+				DCAD17D929ADD80200876430 /* CDPerson+CoreDataClass.swift in Sources */,
+				DCAD17E929ADDC9D00876430 /* VehicleRepository.swift in Sources */,
+				DCAD17DC29ADD80200876430 /* CDVehicle+CoreDataProperties.swift in Sources */,
+				DCAD17DA29ADD80200876430 /* CDPerson+CoreDataProperties.swift in Sources */,
+				DCAD17E729ADDB6000876430 /* PersonRepository.swift in Sources */,
+				DCAD17E529ADDB2D00876430 /* BaseRepository.swift in Sources */,
+				DCAD17DE29ADD88900876430 /* PersistanceStorage.swift in Sources */,
+				DCAD17EC29ADE4CB00876430 /* CDPerson+Extension.swift in Sources */,
+				DCAD17DB29ADD80200876430 /* CDVehicle+CoreDataClass.swift in Sources */,
+				DCAD17E329ADDA6400876430 /* Vehicle.swift in Sources */,
+				DCAD17BF29ADD66300876430 /* SceneDelegate.swift in Sources */,
+				DCAD17C729ADD66300876430 /* CoreDataOneToMany.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCAD17C229ADD66300876430 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAD17C329ADD66300876430 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCAD17CA29ADD66500876430 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAD17CB29ADD66500876430 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCAD17CE29ADD66500876430 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCAD17CF29ADD66500876430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCAD17D129ADD66500876430 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HS5A736SD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoreDataOneToMany/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alphaTuring.CoreDataOneToMany;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCAD17D229ADD66500876430 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HS5A736SD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoreDataOneToMany/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alphaTuring.CoreDataOneToMany;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCAD17B429ADD66300876430 /* Build configuration list for PBXProject "CoreDataOneToMany" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD17CE29ADD66500876430 /* Debug */,
+				DCAD17CF29ADD66500876430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCAD17D029ADD66500876430 /* Build configuration list for PBXNativeTarget "CoreDataOneToMany" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAD17D129ADD66500876430 /* Debug */,
+				DCAD17D229ADD66500876430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DCAD17C529ADD66300876430 /* CoreDataOneToMany.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DCAD17C629ADD66300876430 /* CoreDataOneToMany.xcdatamodel */,
+			);
+			currentVersion = DCAD17C629ADD66300876430 /* CoreDataOneToMany.xcdatamodel */;
+			path = CoreDataOneToMany.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DCAD17B129ADD66300876430 /* Project object */;
+}

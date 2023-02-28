@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDPerson" representedClassName="CDPerson" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toVehicle" optional="YES" toMany="YES" minCount="1" maxCount="2" deletionRule="Nullify" destinationEntity="CDVehicle" inverseName="toPerson" inverseEntity="CDVehicle"/>
+    </entity>
+    <entity name="CDVehicle" representedClassName="CDVehicle" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="toPerson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDPerson" inverseName="toVehicle" inverseEntity="CDPerson"/>
+    </entity>
+    <elements>
+        <element name="CDPerson" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="CDVehicle" positionX="-54" positionY="-9" width="128" height="89"/>
+    </elements>
+</model>
